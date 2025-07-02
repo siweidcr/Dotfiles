@@ -76,5 +76,27 @@ set noerrorbells visualbell t_vb=
 "inoremap <Right> <ESC>:echoe "Use l"<CR>
 "inoremap <Up>    <ESC>:echoe "Use k"<CR>
 "inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+"vim-plug
+"usage
+":PlugInstall to install the plugins
+":PlugUpdate to install or update the plugins
+":PlugDiff to review the changes from the last update
+":PlugClean to remove plugins no longer in the list
+call plug#begin()
+"List plugins here
+call plug#end()
+
+"ctrlp.vim config
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim
+
+"
+set autoindent
+set shiftwidth=4
+set tabstop=4
+
+"for tags
+set tags=tags;
